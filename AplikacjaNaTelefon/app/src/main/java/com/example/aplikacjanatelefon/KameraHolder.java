@@ -13,7 +13,7 @@ import com.example.aplikacjanatelefon.R;
 public class KameraHolder extends RecyclerView.ViewHolder {
 
     TextView nazwaKamery, polozenieParkingu;
-    public KameraHolder(@NonNull View itemView) {
+    public KameraHolder(@NonNull View itemView, KameraViewInterface kameraViewInterface) {
         super(itemView);
         nazwaKamery = itemView.findViewById(R.id.nazwaParkinguKNL);
         polozenieParkingu = itemView.findViewById(R.id.polozenieParkinguKNL);
@@ -21,7 +21,12 @@ public class KameraHolder extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (kameraViewInterface != null) {
+                    int pos = getAdapterPosition();
+                    if (pos != RecyclerView.NO_POSITION) {
+                        kameraViewInterface.onItemClick(pos);
+                    }
+                }
             }
         });
     }

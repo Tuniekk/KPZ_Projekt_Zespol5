@@ -19,11 +19,14 @@ public class KameraActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_kamera);
 
+        // Pobieranie url strony z poprzedniego okna
+        String urlStrony = getIntent().getStringExtra("URL_STRONY");
+
         Button buttonPowrot = findViewById(R.id.buttonPowrotK);
         WebView webViewStronaK = findViewById(R.id.webViewStronaK);
         webViewStronaK.getSettings().setJavaScriptEnabled(true);
         webViewStronaK.setWebViewClient(new WebViewClient());
-        webViewStronaK.loadUrl("https://www.wtp.waw.pl/parkingi/parking-pr-metro-stoklosy/");
+        webViewStronaK.loadUrl(urlStrony);
 
         buttonPowrot.setOnClickListener(v->{
             super.onBackPressed();
