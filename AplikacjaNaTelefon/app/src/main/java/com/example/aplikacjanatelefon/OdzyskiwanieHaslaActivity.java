@@ -36,11 +36,10 @@ public class OdzyskiwanieHaslaActivity extends AppCompatActivity {
             if(!TextUtils.isEmpty(sEmail)) {
 
                 wyslijWiadomosc();
-                komunikat.setText("Wiadomość e-mail została przesłana na wskazany adres. \n" +
-                        "Prosimy o upewnienie się, że wiadomość nie znalazła się w folderze spam przed ponowną próbą wysłania.");
+                komunikat.setText(R.string.str_emailPrzeslany);
             }
             else {
-                komunikat.setText("Niepoprawny adres e-mail! Prosimy spróbować ponownie.");
+                komunikat.setText(R.string.str_niepoprawnyEmail);
             }
             // Schowanie klawiatury po przeslaniu wiadomosci
             editViewEmail.onEditorAction(EditorInfo.IME_ACTION_DONE);

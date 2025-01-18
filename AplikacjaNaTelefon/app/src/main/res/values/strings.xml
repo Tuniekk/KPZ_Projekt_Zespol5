@@ -60,4 +60,13 @@
     <string name="str_login">Login</string>
     <string name="str_haslo">Hasło</string>
     <string name="str_niepoprawneDaneLogowania">Niepoprawne dane logowania! Spróbuj ponownie.</string>
+    <string name="str_zarejestrujSie">Zarejestruj się</string>
+    <string name="str_mojeKamery">Moje kamery</string>
+    <string name="str_wylogujSie">Wyloguj się</string>
+    <string name="str_przeslijEmail">Prześlij wiadomość e-mail</string>
+    <string name="str_emailPrzeslany">Wiadomość e-mail została przesłana na wskazany adres. Prosimy o upewnienie się, że wiadomość nie znalazła się w folderze spam przed ponowną próbą wysłania.</string>
+    <string name="str_email" translatable="false">E-mail</string>
+    <string name="str_niepoprawnyEmail">Niepoprawny adres e-mail! Spróbuj podać inny adres.</string>
+    <string name="str_powtorzHaslo">Powtórz hasło</string>
+    <string name="str_utworzKonto">Utwórz konto</string>
 </resources>

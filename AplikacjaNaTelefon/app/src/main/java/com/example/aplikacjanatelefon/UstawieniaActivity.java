@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class UstawieniaActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +57,8 @@ public class UstawieniaActivity extends AppCompatActivity {
 
         // Utworzenie listy z językami
         ArrayList<String> listaJezykow = new ArrayList<>();
-        listaJezykow.add(getResources().getString(R.string.str_Polski));
         listaJezykow.add(getResources().getString(R.string.str_Angielski));
+        listaJezykow.add(getResources().getString(R.string.str_Polski));
         ArrayAdapter<String> adapterJezyki = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,listaJezykow);
         adapterJezyki.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
 
@@ -79,8 +78,8 @@ public class UstawieniaActivity extends AppCompatActivity {
                 } else if (wybranyTryb.equals(getResources().getString(R.string.str_motywCiemny))) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 }
+
                 zapiszStan(spinnerMotywWyswietlania,folder,"wybranyMotywWyswietlania");
-                UstawieniaActivity.this.onRestart();
             }
 
             @Override
@@ -99,8 +98,8 @@ public class UstawieniaActivity extends AppCompatActivity {
                 else {
                     ustawJezyk("en");
                 }
+
                 zapiszStan(spinnerJezyki,folder,"wybranyJezyk");
-                UstawieniaActivity.this.onRestart();
             }
 
             @Override
@@ -110,7 +109,8 @@ public class UstawieniaActivity extends AppCompatActivity {
         });
 
         buttonPowrot.setOnClickListener(v -> {
-            super.onBackPressed();
+            Intent intent = new Intent(this,MenuGlowneActivity.class);
+            startActivity(intent);
             finish();
         });
 
@@ -137,6 +137,8 @@ public class UstawieniaActivity extends AppCompatActivity {
         prefEditor.commit();
     }
     private void odswiezEkran() {
-
+            Intent intent = new Intent(this, UstawieniaActivity.class);
+            startActivity(intent);
+            finish();
     }
 }

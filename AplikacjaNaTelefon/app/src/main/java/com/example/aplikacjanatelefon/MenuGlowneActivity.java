@@ -32,6 +32,7 @@ public class MenuGlowneActivity extends AppCompatActivity {
         buttonUstawienia.setOnClickListener(v -> {
             Intent intent = new Intent(this,UstawieniaActivity.class);
             startActivity(intent);
+            finish();
         });
 
         buttonWylogujSie.setOnClickListener(v -> {
@@ -44,7 +45,8 @@ public class MenuGlowneActivity extends AppCompatActivity {
             builder.setPositiveButton(R.string.str_tak, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    MenuGlowneActivity.super.onBackPressed();
+                    Intent intent = new Intent(MenuGlowneActivity.this,MainActivity.class);
+                    startActivity(intent);
                     finish();
                 }
             });

@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 editViewHaslo.onEditorAction(EditorInfo.IME_ACTION_DONE);
                 Intent intent = new Intent(this,MenuGlowneActivity.class);
                 startActivity(intent);
+                finish();
             }
 
         });
