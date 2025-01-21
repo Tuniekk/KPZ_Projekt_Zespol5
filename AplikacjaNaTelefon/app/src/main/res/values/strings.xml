@@ -70,4 +70,5 @@
     <string name="str_powtorzHaslo">Powtórz hasło</string>
     <string name="str_utworzKonto">Utwórz konto</string>
     <string name="str_pokazNaMapie">Pokaż na mapie</string>
+    <string name="str_liczbaWolnychMiejsc">Liczba wolnych miejsc parkingowych:</string>
 </resources>

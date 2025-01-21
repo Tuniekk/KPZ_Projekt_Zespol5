@@ -31,7 +31,7 @@ public class MojeKameryActivity extends AppCompatActivity implements KameraViewI
         parkingiP_R.add(new ParkingP_R("P+R Metro Wilanowska","https://www.wtp.waw.pl/parkingi/parking-pr-metro-wilanowska/","52.18005,21.02476"));
         parkingiP_R.add(new ParkingP_R("P+R Połczyńska","https://www.wtp.waw.pl/parkingi/parking-pr-polczynska/","52.22222,21.92240"));
         // Dodanie naszej kamery, już jako kameraP_R
-        parkingiP_R.add(new ParkingP_R("Parking Wydziału Mechatroniki Politechiniki Warszawskiej","https://api.thingspeak.com/channels/2813259/fields/1.json","52.20309,21.00182"));
+        parkingiP_R.add(new ParkingP_R("Parking Wydziału Mechatroniki Politechiniki Warszawskiej","https://api.thingspeak.com/channels/2815765/fields/1.json","52.20309,21.00182"));
 
         RecyclerView recyclerView = findViewById(R.id.recycleViewKameryMK);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

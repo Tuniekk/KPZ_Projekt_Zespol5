@@ -28,4 +28,5 @@
     <string name="str_powtorzHaslo">Repeat password</string>
     <string name="str_utworzKonto">Create account</string>
     <string name="str_pokazNaMapie">Show on the map</string>
+    <string name="str_liczbaWolnychMiejsc">Number of available parking slots:</string>
 </resources>
