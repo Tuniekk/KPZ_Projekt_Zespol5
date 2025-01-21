@@ -69,4 +69,5 @@
     <string name="str_niepoprawnyEmail">Niepoprawny adres e-mail! Spróbuj podać inny adres.</string>
     <string name="str_powtorzHaslo">Powtórz hasło</string>
     <string name="str_utworzKonto">Utwórz konto</string>
+    <string name="str_pokazNaMapie">Pokaż na mapie</string>
 </resources>

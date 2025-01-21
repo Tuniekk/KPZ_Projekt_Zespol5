@@ -35,6 +35,8 @@ android {
 }
 
 dependencies {
+    implementation("org.json:json:20210307")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
