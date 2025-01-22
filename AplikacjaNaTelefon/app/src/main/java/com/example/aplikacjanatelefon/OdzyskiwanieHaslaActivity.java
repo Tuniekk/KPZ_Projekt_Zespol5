@@ -53,6 +53,6 @@ public class OdzyskiwanieHaslaActivity extends AppCompatActivity {
     }
     public void wyslijWiadomosc()
     {
-
+        // Kod przesyłający wiadomość e-mail na wskazany adres
     }
 }

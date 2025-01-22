@@ -14,12 +14,12 @@ public class KameraAdapter extends RecyclerView.Adapter<KameraHolder> {
     private final KameraViewInterface kameraViewInterface;
     Context context;
     View.OnClickListener onClickListener;
-    List<ParkingP_R> parkingiP_R;
+    List<Parking> parkingi;
 
-    public KameraAdapter(Context context, List<ParkingP_R> parkingiP_R,
+    public KameraAdapter(Context context, List<Parking> parkingi,
                          KameraViewInterface kameraViewInterface) {
         this.context = context;
-        this.parkingiP_R = parkingiP_R;
+        this.parkingi = parkingi;
         this.kameraViewInterface = kameraViewInterface;
     }
 
@@ -31,14 +31,14 @@ public class KameraAdapter extends RecyclerView.Adapter<KameraHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull KameraHolder holder, int position) {
-        holder.nazwaKamery.setText(parkingiP_R.get(position).getNazwaParkingu());
-        holder.polozenieParkingu.setText(parkingiP_R.get(position).getPolozenieNaMapie());
+        holder.nazwaKamery.setText(parkingi.get(position).getNazwaParkingu());
+        holder.polozenieParkingu.setText(parkingi.get(position).getPolozenieNaMapie());
 
     }
 
     @Override
     public int getItemCount() {
-        return parkingiP_R.size();
+        return parkingi.size();
     }
 
 }

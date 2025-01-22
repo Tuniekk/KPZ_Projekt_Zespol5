@@ -40,7 +40,7 @@ public class KameraNaszaActivity extends AppCompatActivity {
         textViewIloscMiejsc = findViewById(R.id.textViewLiczbaMiejscKN);
 
         obecnaIloscMiejsc = thingSpeakReader.readFromThingSpeak();
-        textViewIloscMiejsc.setText(R.string.str_liczbaWolnychMiejsc+"\n"+obecnaIloscMiejsc);
+        textViewIloscMiejsc.setText(obecnaIloscMiejsc);
 
         buttonPowrot.setOnClickListener(v->{
             super.onBackPressed();

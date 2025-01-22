@@ -136,9 +136,4 @@ public class UstawieniaActivity extends AppCompatActivity {
         prefEditor.putInt(nazwaZmiennej,zmienna);
         prefEditor.commit();
     }
-    private void odswiezEkran() {
-            Intent intent = new Intent(this, UstawieniaActivity.class);
-            startActivity(intent);
-            finish();
-    }
 }
